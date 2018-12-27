@@ -1,4 +1,9 @@
 <html>
+<head>
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109579764-3"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-109579764-3");</script>
+</head>
 <body>
 <script>function parse(n){var p=n=>Array.from(new Set(n)),a=[],e=n.match(/.+?\b(?:\W+)?/g).filter(n=>n.length),t=p(e);t.push([]),(e=e.map(n=>t.findIndex(p=>p==n))).push(t.length-1),t=t.map(n=>[n,[],[]]),e.map((n,p)=>{n!=t.length-1&&t[n][1].push(e[p+1])}),t.map((n,p)=>n[1].map(n=>t[n][2].push(p)));for(var m=(n,p)=>(t[n[1][0]][2]=t[n[1][0]][2].filter(n=>n!=p),[n[0]+t[n[1][0]][0],t[n[1][0]][1],n[2]]);t.find(n=>1==n[1].length);){t=t.map((n,p)=>1==n[1].length?m(n,p):n)}return t=(t=t.map((n,p)=>[n[0],n[1],n[2],p]).filter(n=>n[2].length)).map(n=>[n[0],n[1].length?n[1].map(n=>t.findIndex(p=>p[3]==n)):[]]),(a=p(t.map(n=>n[1].join("|"))).map(n=>n.split("|").map(n=>parseInt(n)))).map(n=>n.map(n=>n.toString(36)).join("!")).join("@")+"»"+t.map((n,p)=>[n[0],a.findIndex(p=>p.join("|")==n[1].join("|"))]).map(n=>n[1].toString(36)+("|"+n[0]).replace(/\n/g,"¶")).join("«")}
 text=parse(`That's "unethical", whatever that means.
